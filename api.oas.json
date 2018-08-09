@@ -15,7 +15,7 @@
               "application/vnd.spicy.smur.hyper+json": {
                 "schema": {
                   "example": {
-                    "fiel3": "Would be nice if both media types had been integrated.",
+                    "field3": "Would be nice if both media types had been integrated.",
                     "field4": "Really would!"
                   }
                 }
