@@ -6,48 +6,29 @@
   },
   "servers": [],
   "paths": {
-    "/section/{sId}": {
+    "/foo": {
       "get": {
         "responses": {
           "200": {
             "description": "",
             "content": {
-              "application/vnd.spicy.smur.hyper+json": {
+              "application/vnd.representation2+json": {
                 "schema": {
-                  "example": {
-                    "field3": "Would be nice if both media types had been integrated.",
-                    "field4": 42
-                  },
                   "properties": {
-                    "field3": {
-                      "type": "string"
-                    },
-                    "field4": {
-                      "type": "integer"
+                    "foo1": {
+                      "type": "number"
                     }
                   },
                   "required": [
-                    "field3",
-                    "field4"
+                    "foo1"
                   ]
                 }
               }
             }
           }
         },
-        "description": "get a section",
-        "operationId": "GET_section-sId"
-      },
-      "parameters": [
-        {
-          "name": "sId",
-          "in": "path",
-          "required": true,
-          "schema": {
-            "type": "string"
-          }
-        }
-      ]
+        "operationId": "GET_foo"
+      }
     }
   },
   "components": {
