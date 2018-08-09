@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: Missing content type in method responses
+version: 1.0
+/section/{sId}:
+  get:
+    description: get a section
+    responses:
+      200:
+        body:
+          'application/vnd.spicy.smur.plain+json':
+            type: 
+              field1: string
+              field2: integer
+            example:
+              field1: Would be nice if both media types had been integrated.
+              field2: 456
+          'application/vnd.spicy.smur.hyper+json':
+            type:
+              fiel3: string
+              field4: integer
+            example:
+              fiel3:  Would be nice if both media types had been integrated.
+              field4: Really would!

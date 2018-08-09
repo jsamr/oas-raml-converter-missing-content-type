@@ -1,0 +1,52 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Missing content type in method responses",
+    "version": "1.0"
+  },
+  "servers": [],
+  "paths": {
+    "/section/{sId}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/vnd.spicy.smur.hyper+json": {
+                "schema": {
+                  "example": {
+                    "fiel3": "Would be nice if both media types had been integrated.",
+                    "field4": "Really would!"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "get a section",
+        "operationId": "GET_section-sId"
+      },
+      "parameters": [
+        {
+          "name": "sId",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    }
+  },
+  "components": {
+    "schemas": {},
+    "responses": {},
+    "parameters": {},
+    "examples": {},
+    "requestBodies": {},
+    "headers": {},
+    "securitySchemes": {},
+    "links": {},
+    "callbacks": {}
+  }
+}
