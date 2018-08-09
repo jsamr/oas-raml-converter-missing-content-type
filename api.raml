@@ -8,16 +8,18 @@ version: 1.0
       200:
         body:
           'application/vnd.spicy.smur.plain+json':
-            type: 
-              field1: string
-              field2: integer
+            type:
+              properties:
+                field1: string
+                field2: integer
             example:
               field1: Would be nice if both media types had been integrated.
               field2: 456
           'application/vnd.spicy.smur.hyper+json':
             type:
-              field3: string
-              field4: integer
+              properties:
+                field3: string
+                field4: integer
             example:
               field3: Would be nice if both media types had been integrated.
-              field4: Really would!
+              field4: 42

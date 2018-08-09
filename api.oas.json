@@ -16,8 +16,20 @@
                 "schema": {
                   "example": {
                     "field3": "Would be nice if both media types had been integrated.",
-                    "field4": "Really would!"
-                  }
+                    "field4": 42
+                  },
+                  "properties": {
+                    "field3": {
+                      "type": "string"
+                    },
+                    "field4": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "field3",
+                    "field4"
+                  ]
                 }
               }
             }
